@@ -307,6 +307,7 @@ ul {
 .container {
     display: flex;
     gap: 24px;
+    justify-content: center;
 }
 
 .filter {
@@ -315,14 +316,19 @@ ul {
     height: 500px;
 }
 
-.content {
+.section {
     max-width: 1114px;
     width: 100%;
     padding: 16px;
+}
+
+.content {
     &__row {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
+        margin-bottom: 40px;
     }
     &__select-list {
         display: flex;
@@ -343,6 +349,16 @@ ul {
         display: flex;
         flex-wrap: wrap;
         border-radius: 4px;
+    }
+    &__related {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    &__related-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
     }
 }
 
@@ -369,6 +385,23 @@ ul {
     }
     &_view {
         padding: 11px 25px;
+    } 
+}
+.btn-related {
+    padding: 6px 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.018em;
+    color: #4A4B57;
+    background: #EDEDF0;
+    border-radius: 99px;
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: underline;
+        cursor: pointer;
     }
-    
 }

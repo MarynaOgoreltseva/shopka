@@ -303,6 +303,7 @@ ul {
 .container {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
 .filter {
@@ -311,15 +312,18 @@ ul {
   height: 500px;
 }
 
-.content {
+.section {
   max-width: 1114px;
   width: 100%;
   padding: 16px;
 }
+
 .content__row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 .content__select-list {
   display: flex;
@@ -340,6 +344,16 @@ ul {
   display: flex;
   flex-wrap: wrap;
   border-radius: 4px;
+}
+.content__related {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.content__related-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .btn {
@@ -364,4 +378,21 @@ ul {
 }
 .btn_view {
   padding: 11px 25px;
+}
+
+.btn-related {
+  padding: 6px 12px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.018em;
+  color: #4A4B57;
+  background: #EDEDF0;
+  border-radius: 99px;
+}
+.btn-related:hover, .btn-related:focus, .btn-related:active {
+  text-decoration: underline;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
