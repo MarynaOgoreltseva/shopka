@@ -479,3 +479,11 @@ ul {
         cursor: pointer;
     }
 }
+
+.content-card {
+    max-width: 259px;
+    width: 100%;
+    &__watching {
+        display: flex;
+    }
+}

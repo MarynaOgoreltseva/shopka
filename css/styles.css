@@ -462,4 +462,12 @@ ul {
 .btn-related:hover, .btn-related:focus, .btn-related:active {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.content-card {
+  max-width: 259px;
+  width: 100%;
+}
+.content-card__watching {
+  display: flex;
 }/*# sourceMappingURL=styles.css.map */
