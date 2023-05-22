@@ -276,6 +276,7 @@ ul {
 }
 .btn-link_departments {
   font-size: 24px;
+  line-height: 36px;
   padding: 8px 20px 8px 12px;
   max-width: 304px;
   width: 100%;
@@ -291,7 +292,6 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 40px;
 }
 .categories__link {
   display: inline-flex;
@@ -315,6 +315,9 @@ ul {
   color: #787885;
 }
 
+.container {
+  padding-top: 16px;
+}
 .container .wrap {
   display: flex;
   gap: 24px;
@@ -330,11 +333,9 @@ ul {
 .section {
   max-width: 1114px;
   width: 100%;
+  padding-top: 40px;
 }
 
-.content {
-  padding: 16px;
-}
 .content__row {
   display: flex;
   justify-content: space-between;
