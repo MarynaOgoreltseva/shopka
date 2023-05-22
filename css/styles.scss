@@ -127,6 +127,14 @@ ul {
         content: "\e910";
         color: #2264d1;
     }
+    &_chevron-right:before {
+        content: "\e911";
+        color: #76a9ff;
+    }
+    &_chevron-down:before {
+        content: "\e912";
+        color: #2264d1;
+    }
 }
 
 .wrap {
@@ -337,6 +345,30 @@ ul {
     padding: 24px 51px 0 0;
 }
 
+.nav {
+    padding-top: 40px;
+    padding-right: 67px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #19191D;
+    &__item-link {
+        padding-left: 8px;
+    }
+    &__subitems-link {
+        padding-left: 16px;
+    }
+    &__tel-item {
+        padding-left: 40px;
+    }
+}
+
+
+
+
+
 .section {
     max-width: 1114px;
     width: 100%;
@@ -417,6 +449,17 @@ ul {
     &_view {
         padding: 11px 25px;
     } 
+    &_nav {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.75px;
+        text-transform: capitalize;
+        color: #2264D1;
+        padding: 12px;
+        margin-left: 56px;
+    }
 }
 .btn-related {
     padding: 6px 12px;

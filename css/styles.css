@@ -124,6 +124,14 @@ ul {
   content: "\e910";
   color: #2264d1;
 }
+.icon_chevron-right:before {
+  content: "\e911";
+  color: #76a9ff;
+}
+.icon_chevron-down:before {
+  content: "\e912";
+  color: #2264d1;
+}
 
 .wrap {
   max-width: 1493px;
@@ -330,6 +338,26 @@ ul {
   padding: 24px 51px 0 0;
 }
 
+.nav {
+  padding-top: 40px;
+  padding-right: 67px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #19191D;
+}
+.nav__item-link {
+  padding-left: 8px;
+}
+.nav__subitems-link {
+  padding-left: 16px;
+}
+.nav__tel-item {
+  padding-left: 40px;
+}
+
 .section {
   max-width: 1114px;
   width: 100%;
@@ -406,6 +434,17 @@ ul {
 }
 .btn_view {
   padding: 11px 25px;
+}
+.btn_nav {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+  color: #2264D1;
+  padding: 12px;
+  margin-left: 56px;
 }
 
 .btn-related {
