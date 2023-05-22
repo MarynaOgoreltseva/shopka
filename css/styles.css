@@ -120,6 +120,10 @@ ul {
   content: "\e90f";
   color: #787885;
 }
+.icon_filter-variant:before {
+  content: "\e910";
+  color: #2264d1;
+}
 
 .wrap {
   max-width: 1493px;
@@ -247,6 +251,7 @@ ul {
   border: 1px solid #9DC2FF;
   border-radius: 4px;
   padding: 8px 12px;
+  display: inline-block;
 }
 .btn-link.is-cart {
   padding: 6px 12px;
@@ -268,6 +273,18 @@ ul {
   text-align: center;
   top: -3px;
   right: -3px;
+}
+.btn-link_departments {
+  font-size: 24px;
+  padding: 8px 20px 8px 12px;
+  max-width: 304px;
+  width: 100%;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+.btn-link__text {
+  margin: 0 auto;
 }
 
 .categories__list {
@@ -305,9 +322,9 @@ ul {
 }
 
 .filter {
-  border: 1px solid blue;
-  width: 335px;
-  height: 500px;
+  max-width: 355px;
+  width: 100%;
+  padding: 24px 51px 0 0;
 }
 
 .section {

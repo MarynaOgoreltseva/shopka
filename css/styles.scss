@@ -123,6 +123,10 @@ ul {
         content: "\e90f";
         color: #787885;
     }
+    &_filter-variant:before {
+        content: "\e910";
+        color: #2264d1;
+    }
 }
 
 .wrap {
@@ -251,6 +255,7 @@ ul {
     border: 1px solid #9DC2FF;
     border-radius: 4px;
     padding: 8px 12px;
+    display: inline-block;
     &.is-cart {
         padding: 6px 12px;
         box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2), 0px 4px 8px rgba(41, 121, 255, 0.2);
@@ -271,6 +276,18 @@ ul {
         text-align: center;
         top: -3px;
         right: -3px;
+    }
+    &_departments {
+        font-size: 24px;
+        padding: 8px 20px 8px 12px;
+        max-width: 304px;
+        width: 100%;
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+    }
+    &__text {
+        margin: 0 auto;
     }
 }
 
@@ -311,9 +328,9 @@ ul {
 }
 
 .filter {
-    border: 1px solid blue;
-    width: 335px;
-    height: 500px;
+    max-width: 355px;
+    width: 100%;
+    padding: 24px 51px 0 0;
 }
 
 .section {
