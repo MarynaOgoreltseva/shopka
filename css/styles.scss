@@ -126,14 +126,10 @@ ul {
 }
 
 .wrap {
+    max-width: 1493px;
+    width: 100%;
     margin: 0 auto;
-    &_header {
-        max-width: 1920px;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
+    padding: 0 20px;
 }
 
 .logo {
@@ -168,6 +164,12 @@ ul {
     padding-top: 16px;
     padding-left: 16px;
     margin-bottom: 48px;
+    & .wrap {
+        max-width: 1920px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
     &__links {
         display: flex;
         flex-wrap: wrap;
@@ -273,13 +275,11 @@ ul {
 }
 
 .categories {
-    max-width: 1493px;
-    width: 100%;
-    margin: 0 auto 40px;
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-bottom: 40px;
     }
     &__link {
         display: inline-flex;
@@ -304,7 +304,7 @@ ul {
     }
 }
 
-.container {
+.container .wrap {
     display: flex;
     gap: 24px;
     justify-content: center;
@@ -319,10 +319,10 @@ ul {
 .section {
     max-width: 1114px;
     width: 100%;
-    padding: 16px;
 }
 
 .content {
+    padding: 16px;
     &__row {
         display: flex;
         justify-content: space-between;
@@ -358,7 +358,17 @@ ul {
     &__related-list {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         gap: 8px;
+    }
+    &__related-text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.018em;
+        color: #19191D;
     }
 }
 
