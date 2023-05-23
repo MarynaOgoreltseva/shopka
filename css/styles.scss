@@ -103,7 +103,7 @@ ul {
     }
     &_ship-wheel:before {
         content: "\e90d";
-        color: #9696a0;
+        color: #9696a0;      
     }
     &_close:before {
         content: "\e900";
@@ -141,6 +141,20 @@ ul {
     &_star:before {
         content: "\e913";
         color: #fb8200;
+    }
+    &_lightbulb:before {
+        content: "\e915";
+        color: #65b168;
+    }
+
+    &_auto-fix:before {
+        content: "\e916";
+        color: #7985cb;
+    }
+
+    &_palette:before {
+        content: "\e917";
+        color: #ef6292;
     }
 }
 
@@ -351,15 +365,11 @@ ul {
     padding-top: 16px;
     .wrap {
         display: flex;
-        gap: 24px;
-        justify-content: center;
     }
 }
     
 
 .filter {
-    max-width: 355px;
-    width: 100%;
     padding: 24px 51px 0 0;
 }
 
@@ -444,6 +454,10 @@ ul {
     &__cards {
         display: flex;
         flex-wrap: wrap;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24), 0px 2px 4px rgba(90, 91, 106, 0.24);
+        border-radius: 8px;
+        margin-bottom: 40px;
     }
 }
 
@@ -561,5 +575,39 @@ ul {
         letter-spacing: 0.1px;
         color: #5E6366;
         margin-left: 8px;
+    }
+}
+
+.content-features {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 360px;
+        width: 100%;
+        padding: 8px 16px;
+        background: #EDEDF0;
+        border-radius: 8px;
+        text-align: center;
+    }
+    &__title {
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.0075em;
+        color: rgba(0, 0, 0, 0.87);
+    }
+    &__subtitle {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 0.018em;
+        color: #5A5B6A;
     }
 }
