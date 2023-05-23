@@ -184,6 +184,24 @@ ul {
   color: #0C2146;
 }
 
+.header-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+  margin-right: 107px;
+}
+.header-links__link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 158%;
+  letter-spacing: 0.0075em;
+  color: #5A5B6A;
+  text-decoration: none;
+}
+.header-links__link:hover {
+  text-decoration: underline;
+}
+
 .header {
   font-family: "Inter";
   font-style: normal;
@@ -197,53 +215,13 @@ ul {
   flex-wrap: wrap;
   align-items: center;
 }
-.header__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 33px;
-  margin-right: 107px;
-}
-.header__link {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 158%;
-  letter-spacing: 0.0075em;
-  color: #5A5B6A;
-  text-decoration: none;
-}
-.header__link:hover {
-  text-decoration: underline;
-}
-.header__search-box {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  max-width: 668px;
-  width: 100%;
-  background: #EDEDF0;
-  border-radius: 99px;
-  margin-right: 30px;
-  padding: 8px 17px 8px 15px;
-}
 .header__submit {
-  background: url(../img/search.png) no-repeat center;
-  width: 18px;
-  height: 18px;
   align-self: center;
   padding-top: 7px;
   padding-bottom: 7px;
 }
 .header__submit:hover {
   transform: scale(1.1);
-}
-.header__search {
-  width: 100%;
-  background: #EDEDF0;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 158%;
-  letter-spacing: 0.0075em;
-  color: #19191D;
 }
 .header__category {
   font-weight: 400;
@@ -257,16 +235,39 @@ ul {
 .header__category:hover {
   text-decoration: underline;
 }
-.header__registration-row {
+
+.header-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 668px;
+  width: 100%;
+  background: #EDEDF0;
+  border-radius: 99px;
+  margin-right: 30px;
+  padding: 8px 17px 8px 15px;
+}
+.header-search__input {
+  width: 100%;
+  background: #EDEDF0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 158%;
+  letter-spacing: 0.0075em;
+  color: #19191D;
+}
+
+.header-registration {
   display: flex;
   gap: 18px;
 }
-.header__pic {
+.header-registration__pic {
   width: 40px;
   height: 40px;
 }
 
 .btn-link {
+  cursor: pointer;
   font-family: "Quicksand";
   font-style: normal;
   font-weight: 700;
@@ -279,11 +280,14 @@ ul {
   padding: 8px 12px;
   display: inline-block;
 }
+.btn-link:hover {
+  box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2), 0px 4px 8px rgba(41, 121, 255, 0.2);
+}
 .btn-link.is-cart {
   padding: 6px 12px;
-  box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2), 0px 4px 8px rgba(41, 121, 255, 0.2);
   position: relative;
   border: none;
+  border: 1px solid #9DC2FF;
 }
 .btn-link__calc {
   position: absolute;
@@ -300,7 +304,7 @@ ul {
   top: -3px;
   right: -3px;
 }
-.btn-link_departments {
+.btn-link_aside-filter-link {
   font-size: 24px;
   line-height: 36px;
   padding: 8px 20px 8px 12px;
@@ -358,16 +362,17 @@ ul {
 
 .container {
   padding-top: 16px;
+  margin-bottom: 10px;
 }
 .container .wrap {
   display: flex;
 }
 
-.filter {
+.aside-menu {
   padding: 24px 51px 0 0;
 }
 
-.nav {
+.aside-nav {
   padding-top: 40px;
   padding-right: 67px;
   font-family: "Inter";
@@ -377,13 +382,13 @@ ul {
   line-height: 150%;
   color: #19191D;
 }
-.nav__item-link {
+.aside-nav__item-link {
   padding-left: 8px;
 }
-.nav__subitems-link {
+.aside-nav__subitems-link {
   padding-left: 16px;
 }
-.nav__tel-item {
+.aside-nav__tel-item {
   padding-left: 40px;
 }
 
@@ -394,6 +399,14 @@ ul {
 }
 
 .content {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.content__block {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;
+}
+.content__block-wrapper {
   padding: 16px;
 }
 .content__row {
@@ -448,9 +461,9 @@ ul {
   flex-wrap: wrap;
   gap: 15px;
   background: #FFFFFF;
-  box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24), 0px 2px 4px rgba(90, 91, 106, 0.24);
-  border-radius: 8px;
-  margin-bottom: 40px;
+}
+.content__item {
+  padding-bottom: 96px;
 }
 
 .btn {
@@ -476,7 +489,7 @@ ul {
 .btn_view {
   padding: 11px 25px;
 }
-.btn_nav {
+.btn_aside-nav {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
