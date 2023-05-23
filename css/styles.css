@@ -48,8 +48,6 @@ ul {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 20px;
-  height: 20px;
   display: inline-block;
 }
 .icon_heart:before {
@@ -131,6 +129,14 @@ ul {
 .icon_chevron-down:before {
   content: "\e912";
   color: #2264d1;
+}
+.icon_star-half:before {
+  content: "\e914";
+  color: #fb8200;
+}
+.icon_star:before {
+  content: "\e913";
+  color: #fb8200;
 }
 
 .wrap {
@@ -295,6 +301,17 @@ ul {
 .btn-link__text {
   margin: 0 auto;
 }
+.btn-link_content-card {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.018em;
+  color: #2264D1;
+  padding: 4px 12px;
+  border: 1px solid #9DC2FF;
+}
 
 .categories__list {
   display: flex;
@@ -411,6 +428,10 @@ ul {
   letter-spacing: 0.018em;
   color: #19191D;
 }
+.content__cards {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .btn {
   font-family: "Inter";
@@ -467,7 +488,61 @@ ul {
 .content-card {
   max-width: 259px;
   width: 100%;
+  padding: 16px 16px 12px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.content-card__img-link {
+  margin-bottom: 12px;
+  display: inline-block;
+}
+.content-card__desc {
+  display: inline-block;
+  font-size: 16px;
+  color: #19191D;
+  text-decoration: none;
+  margin-bottom: 8px;
+  line-height: 150%;
+}
+.content-card__desc:hover {
+  text-decoration: underline;
+}
+.content-card__price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 8px;
+}
+.content-card__delivery {
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.018em;
+  color: #787885;
+  margin-bottom: 9px;
+}
+.content-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .content-card__watching {
   display: flex;
+}
+
+.raiting {
+  display: flex;
+  align-items: center;
+}
+.raiting__numb {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  color: #5E6366;
+  margin-left: 8px;
 }/*# sourceMappingURL=styles.css.map */
