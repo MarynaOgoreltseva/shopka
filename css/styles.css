@@ -336,10 +336,7 @@ ul {
   align-items: center;
   text-decoration: none;
 }
-.categories__link:active, .categories__link :hover {
-  color: #2979FF;
-}
-.categories__link .icon_hanger:hover:before {
+.categories__link:active, .categories__link :hover, .categories__link :hover:before {
   color: #2979FF;
 }
 .categories__name {
@@ -571,6 +568,9 @@ ul {
   background: #EDEDF0;
   border-radius: 8px;
   text-align: center;
+}
+.content-features__item .icon {
+  font-size: 80px;
 }
 .content-features__title {
   font-family: "Quicksand";
