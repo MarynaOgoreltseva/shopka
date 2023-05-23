@@ -333,17 +333,27 @@ ul {
 }
 
 .categories {
+    
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        
     }
     &__link {
         display: inline-flex;
         flex-direction: column;
         align-items: center;
         text-decoration: none;
-        &:active,:hover,:hover:before {
+        color: #787885;
+        & .icon:before {
+                color: inherit;
+            }
+        & .icon {
+            width: 100%;
+            text-align: center;
+        }
+        &:hover {
             color: #2979FF;
         }
     }
@@ -354,7 +364,7 @@ ul {
         font-size: 14px;
         line-height: 143%;
         letter-spacing: 0.018em;
-        color: #787885;
+        // color: #787885;
     }
 }
 
