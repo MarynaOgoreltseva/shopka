@@ -618,6 +618,12 @@ ul {
             font-size: 80px;
         }
     }
+    &__item-link {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
     &__title {
         font-family: 'Quicksand';
         font-style: normal;
