@@ -243,447 +243,468 @@
                 <div class="content">
                     <div class="content__block">
                         <div class="content__block-wrapper">
-                            <div class="content__row">
-                                <ul class="content__select-list">
-                                    <li class="content__select-item">
-                                        <select name="Useless" id="Useless" class="content__select">
+                            <div class="content__settings">
+                                <ul class="select-list">
+                                    <li class="select-list__item">
+                                        <select name="Useless" id="Useless" class="select-item">
                                             <option value="1">Useless first</option>
                                             <option value="1">Useless second</option>
                                             <option value="1">Useless third</option>
                                         </select>
                                     </li>
-                                    <li class="content__select-item">
-                                        <select name="Condition" id="Condition" class="content__select">
+                                    <li class="select-list__item">
+                                        <select name="Condition" id="Condition" class="select-item">
                                             <option value="1">Condition</option>
                                             <option value="1">Condition second</option>
                                             <option value="1">Condition third</option>
                                         </select>
                                     </li>
-                                    <li class="content__select-item">
-                                        <select name="Delivery" id="Delivery" class="content__select">
+                                    <li class="select-list__item">
+                                        <select name="Delivery" id="Delivery" class="select-item">
                                             <option value="1">Delivery options</option>
                                             <option value="1">Delivery options second</option>
                                             <option value="1">Delivery options third</option>
                                         </select>
                                     </li>
                                 </ul>
-                                <ul class="content__filter-list">
-                                    <li class="content__filter-item">
+                                <ul class="filter-list">
+                                    <li class="filter-list__item">
                                         <button class="btn btn_filter">Show all</button>
                                     </li>
-                                    <li class="content__filter-item">
+                                    <li class="filter-list__item">
                                         <button class="btn btn_filter">Auction</button>
                                     </li>
-                                    <li class="content__filter-item">
+                                    <li class="filter-list__item">
                                         <button class="btn btn_filter">Buy now</button>
                                     </li>
                                 </ul>
-                                <ul class="content__view-list">
-                                    <li class="content__view-item">
+                                <ul class="view-list">
+                                    <li class="view-list__item">
                                         <button class="btn btn_view">
                                             <span class="icon icon_view-list"></span>
                                         </button>
                                     </li>
-                                    <li class="content__view-item">
+                                    <li class="view-list__item">
                                         <button class="btn btn_view">
                                             <span class="icon icon_view-grid"></span>
                                         </button>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="content__related">
-                                <ul class="content__related-list">
-                                    <li class="content__related-item">
-                                        <span class="content__related-text">Related</span>
-                                    </li>
-                                    <li class="content__related-item">
-                                        <button class="btn-related">worldwide shipping</button>
-                                    </li>
-                                    <li class="content__related-item">
-                                        <button class="btn-related">under $50</button>
-                                    </li>
-                                    <li class="content__related-item">
-                                        <button class="btn-related">kitten</button>
-                                    </li>
-                                    <li class="content__related-item">
-                                        <button class="btn-related">plastic plugs</button>
-                                    </li>
-                                    <li class="content__related-item">
-                                        <button class="btn-related">pucker shoes</button>
-                                    </li>
-                                    <li class="content__related-item">
-                                        <button class="btn-related">vintage typewriter</button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="content__cards">
-                                <div class="content-card">
-                                    <a href="#" class="content-card__img-link">
-                                        <img src="img/content/writer.png" alt="" class="content-card__img">
-                                    </a>
-                                    <a href="#" class="content-card__desc">
-                                        Vintage Typewriter to post awesome stories about UI design and webdev.
-                                    </a>
-                                    <div class="content-card__price">
-                                        $49.50
-                                    </div>
-                                    <div class="content-card__delivery">
-                                        Eligible for Shipping To Mars or somewhere else
-                                    </div>
-                                    <div class="content-card__footer">
-                                        <div class="raiting">
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star-half"></span>
-                                            <span class="raiting__numb">4.05</span>
+                            <ul class="content-tabs">
+                                <li class="content-tabs__item">
+                                    <span class="content-tabs__text">Related</span>
+                                </li>
+                                <li class="content-tabs__item">
+                                    <button class="tabs">worldwide shipping</button>
+                                </li>
+                                <li class="content-tabs__item">
+                                    <button class="tabs">under $50</button>
+                                </li>
+                                <li class="content-tabs__item">
+                                    <button class="tabs">kitten</button>
+                                </li>
+                                <li class="content-tabs__item">
+                                    <button class="tabs">plastic plugs</button>
+                                </li>
+                                <li class="content-tabs__item">
+                                    <button class="tabs">pucker shoes</button>
+                                </li>
+                                <li class="content-tabs__item">
+                                    <button class="tabs">vintage typewriter</button>
+                                </li>
+                            </ul>
+                            <ul class="content-grid">
+                                <li class="content-grid__cell">
+                                    <div class="content-card">
+                                        <a href="#" class="content-card__img-link">
+                                            <img src="img/content/writer.png" alt="" class="content-card__img">
+                                        </a>
+                                        <a href="#" class="content-card__desc">
+                                            Vintage Typewriter to post awesome stories about UI design and webdev.
+                                        </a>
+                                        <div class="content-card__price">
+                                            $49.50
                                         </div>
-                                        <div class="content-card__watching">
-                                            <button class="btn-link btn-link_content-card">
-                                                <span class="icon icon_heart"></span>
-                                                <span class="btn-link__text">Watch</span>
-                                            </button>
+                                        <div class="content-card__delivery">
+                                            Eligible for Shipping To Mars or somewhere else
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="content-card">
-                                    <a href="#" class="content-card__img-link">
-                                        <img src="img/content/shoes.png" alt="" class="content-card__img">
-                                    </a>
-                                    <a href="#" class="content-card__desc">
-                                        Vintage Typewriter to post awesome stories about UI design and webdev.
-                                    </a>
-                                    <div class="content-card__price">
-                                        $49.50
-                                    </div>
-                                    <div class="content-card__delivery">
-                                        Eligible for Shipping To Mars or somewhere else
-                                    </div>
-                                    <div class="content-card__footer">
-                                        <div class="raiting">
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star-half"></span>
-                                            <span class="raiting__numb">4.05</span>
-                                        </div>
-                                        <div class="content-card__watching">
-                                            <button class="btn-link btn-link_content-card">
-                                                <span class="icon icon_heart"></span>
-                                                <span class="btn-link__text">Watch</span>
-                                            </button>
+                                        <div class="content-card__footer">
+                                            <div class="raiting">
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star-half"></span>
+                                                <span class="raiting__numb">4.05</span>
+                                            </div>
+                                            <div class="content-card__watching">
+                                                <button class="btn-link btn-link_content-card">
+                                                    <span class="icon icon_heart"></span>
+                                                    <span class="btn-link__text">Watch</span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="content-card">
-                                    <a href="#" class="content-card__img-link">
-                                        <img src="img/content/cat.png" alt="" class="content-card__img">
-                                    </a>
-                                    <a href="#" class="content-card__desc">
-                                        Vintage Typewriter to post awesome stories about UI design and webdev.
-                                    </a>
-                                    <div class="content-card__price">
-                                        $49.50
-                                    </div>
-                                    <div class="content-card__delivery">
-                                        Eligible for Shipping To Mars or somewhere else
-                                    </div>
-                                    <div class="content-card__footer">
-                                        <div class="raiting">
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star-half"></span>
-                                            <span class="raiting__numb">4.05</span>
+                                </li>
+                                <li class="content-grid__cell">
+                                    <div class="content-card">
+                                        <a href="#" class="content-card__img-link">
+                                            <img src="img/content/shoes.png" alt="" class="content-card__img">
+                                        </a>
+                                        <a href="#" class="content-card__desc">
+                                            Vintage Typewriter to post awesome stories about UI design and webdev.
+                                        </a>
+                                        <div class="content-card__price">
+                                            $49.50
                                         </div>
-                                        <div class="content-card__watching">
-                                            <button class="btn-link btn-link_content-card">
-                                                <span class="icon icon_heart"></span>
-                                                <span class="btn-link__text">Watch</span>
-                                            </button>
+                                        <div class="content-card__delivery">
+                                            Eligible for Shipping To Mars or somewhere else
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="content-card">
-                                    <a href="#" class="content-card__img-link">
-                                        <img src="img/content/plastic.png" alt="" class="content-card__img">
-                                    </a>
-                                    <a href="#" class="content-card__desc">
-                                        Vintage Typewriter to post awesome stories about UI design and webdev.
-                                    </a>
-                                    <div class="content-card__price">
-                                        $49.50
-                                    </div>
-                                    <div class="content-card__delivery">
-                                        Eligible for Shipping To Mars or somewhere else
-                                    </div>
-                                    <div class="content-card__footer">
-                                        <div class="raiting">
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star-half"></span>
-                                            <span class="raiting__numb">4.05</span>
-                                        </div>
-                                        <div class="content-card__watching">
-                                            <button class="btn-link btn-link_content-card">
-                                                <span class="icon icon_heart"></span>
-                                                <span class="btn-link__text">Watch</span>
-                                            </button>
+                                        <div class="content-card__footer">
+                                            <div class="raiting">
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star-half"></span>
+                                                <span class="raiting__numb">4.05</span>
+                                            </div>
+                                            <div class="content-card__watching">
+                                                <button class="btn-link btn-link_content-card">
+                                                    <span class="icon icon_heart"></span>
+                                                    <span class="btn-link__text">Watch</span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="content-card">
-                                    <a href="#" class="content-card__img-link">
-                                        <img src="img/content/drink.png" alt="" class="content-card__img">
-                                    </a>
-                                    <a href="#" class="content-card__desc">
-                                        Vintage Typewriter to post awesome stories about UI design and webdev.
-                                    </a>
-                                    <div class="content-card__price">
-                                        $49.50
-                                    </div>
-                                    <div class="content-card__delivery">
-                                        Eligible for Shipping To Mars or somewhere else
-                                    </div>
-                                    <div class="content-card__footer">
-                                        <div class="raiting">
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star-half"></span>
-                                            <span class="raiting__numb">4.05</span>
+                                </li>
+                                <li class="content-grid__cell">
+                                    <div class="content-card">
+                                        <a href="#" class="content-card__img-link">
+                                            <img src="img/content/cat.png" alt="" class="content-card__img">
+                                        </a>
+                                        <a href="#" class="content-card__desc">
+                                            Vintage Typewriter to post awesome stories about UI design and webdev.
+                                        </a>
+                                        <div class="content-card__price">
+                                            $49.50
                                         </div>
-                                        <div class="content-card__watching">
-                                            <button class="btn-link btn-link_content-card">
-                                                <span class="icon icon_heart"></span>
-                                                <span class="btn-link__text">Watch</span>
-                                            </button>
+                                        <div class="content-card__delivery">
+                                            Eligible for Shipping To Mars or somewhere else
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="content-card">
-                                    <a href="#" class="content-card__img-link">
-                                        <img src="img/content/item.png" alt="" class="content-card__img">
-                                    </a>
-                                    <a href="#" class="content-card__desc">
-                                        Vintage Typewriter to post awesome stories about UI design and webdev.
-                                    </a>
-                                    <div class="content-card__price">
-                                        $49.50
-                                    </div>
-                                    <div class="content-card__delivery">
-                                        Eligible for Shipping To Mars or somewhere else
-                                    </div>
-                                    <div class="content-card__footer">
-                                        <div class="raiting">
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star-half"></span>
-                                            <span class="raiting__numb">4.05</span>
-                                        </div>
-                                        <div class="content-card__watching">
-                                            <button class="btn-link btn-link_content-card">
-                                                <span class="icon icon_heart"></span>
-                                                <span class="btn-link__text">Watch</span>
-                                            </button>
+                                        <div class="content-card__footer">
+                                            <div class="raiting">
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star-half"></span>
+                                                <span class="raiting__numb">4.05</span>
+                                            </div>
+                                            <div class="content-card__watching">
+                                                <button class="btn-link btn-link_content-card">
+                                                    <span class="icon icon_heart"></span>
+                                                    <span class="btn-link__text">Watch</span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="content-card">
-                                    <a href="#" class="content-card__img-link">
-                                        <img src="img/content/shorts.png" alt="" class="content-card__img">
-                                    </a>
-                                    <a href="#" class="content-card__desc">
-                                        Vintage Typewriter to post awesome stories about UI design and webdev.
-                                    </a>
-                                    <div class="content-card__price">
-                                        $49.50
-                                    </div>
-                                    <div class="content-card__delivery">
-                                        Eligible for Shipping To Mars or somewhere else
-                                    </div>
-                                    <div class="content-card__footer">
-                                        <div class="raiting">
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star-half"></span>
-                                            <span class="raiting__numb">4.05</span>
+                                </li>
+                                <li class="content-grid__cell">
+                                    <div class="content-card">
+                                        <a href="#" class="content-card__img-link">
+                                            <img src="img/content/plastic.png" alt="" class="content-card__img">
+                                        </a>
+                                        <a href="#" class="content-card__desc">
+                                            Vintage Typewriter to post awesome stories about UI design and webdev.
+                                        </a>
+                                        <div class="content-card__price">
+                                            $49.50
                                         </div>
-                                        <div class="content-card__watching">
-                                            <button class="btn-link btn-link_content-card">
-                                                <span class="icon icon_heart"></span>
-                                                <span class="btn-link__text">Watch</span>
-                                            </button>
+                                        <div class="content-card__delivery">
+                                            Eligible for Shipping To Mars or somewhere else
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="content-card">
-                                    <a href="#" class="content-card__img-link">
-                                        <img src="img/content/pencil.png" alt="" class="content-card__img">
-                                    </a>
-                                    <a href="#" class="content-card__desc">
-                                        Vintage Typewriter to post awesome stories about UI design and webdev.
-                                    </a>
-                                    <div class="content-card__price">
-                                        $49.50
-                                    </div>
-                                    <div class="content-card__delivery">
-                                        Eligible for Shipping To Mars or somewhere else
-                                    </div>
-                                    <div class="content-card__footer">
-                                        <div class="raiting">
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star-half"></span>
-                                            <span class="raiting__numb">4.05</span>
-                                        </div>
-                                        <div class="content-card__watching">
-                                            <button class="btn-link btn-link_content-card">
-                                                <span class="icon icon_heart"></span>
-                                                <span class="btn-link__text">Watch</span>
-                                            </button>
+                                        <div class="content-card__footer">
+                                            <div class="raiting">
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star-half"></span>
+                                                <span class="raiting__numb">4.05</span>
+                                            </div>
+                                            <div class="content-card__watching">
+                                                <button class="btn-link btn-link_content-card">
+                                                    <span class="icon icon_heart"></span>
+                                                    <span class="btn-link__text">Watch</span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="content-card">
-                                    <a href="#" class="content-card__img-link">
-                                        <img src="img/content/tea.png" alt="" class="content-card__img">
-                                    </a>
-                                    <a href="#" class="content-card__desc">
-                                        Vintage Typewriter to post awesome stories about UI design and webdev.
-                                    </a>
-                                    <div class="content-card__price">
-                                        $49.50
-                                    </div>
-                                    <div class="content-card__delivery">
-                                        Eligible for Shipping To Mars or somewhere else
-                                    </div>
-                                    <div class="content-card__footer">
-                                        <div class="raiting">
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star-half"></span>
-                                            <span class="raiting__numb">4.05</span>
+                                </li>
+                                <li class="content-grid__cell">
+                                    <div class="content-card">
+                                        <a href="#" class="content-card__img-link">
+                                            <img src="img/content/drink.png" alt="" class="content-card__img">
+                                        </a>
+                                        <a href="#" class="content-card__desc">
+                                            Vintage Typewriter to post awesome stories about UI design and webdev.
+                                        </a>
+                                        <div class="content-card__price">
+                                            $49.50
                                         </div>
-                                        <div class="content-card__watching">
-                                            <button class="btn-link btn-link_content-card">
-                                                <span class="icon icon_heart"></span>
-                                                <span class="btn-link__text">Watch</span>
-                                            </button>
+                                        <div class="content-card__delivery">
+                                            Eligible for Shipping To Mars or somewhere else
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="content-card">
-                                    <a href="#" class="content-card__img-link">
-                                        <img src="img/content/tree.png" alt="" class="content-card__img">
-                                    </a>
-                                    <a href="#" class="content-card__desc">
-                                        Vintage Typewriter to post awesome stories about UI design and webdev.
-                                    </a>
-                                    <div class="content-card__price">
-                                        $49.50
-                                    </div>
-                                    <div class="content-card__delivery">
-                                        Eligible for Shipping To Mars or somewhere else
-                                    </div>
-                                    <div class="content-card__footer">
-                                        <div class="raiting">
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star-half"></span>
-                                            <span class="raiting__numb">4.05</span>
-                                        </div>
-                                        <div class="content-card__watching">
-                                            <button class="btn-link btn-link_content-card">
-                                                <span class="icon icon_heart"></span>
-                                                <span class="btn-link__text">Watch</span>
-                                            </button>
+                                        <div class="content-card__footer">
+                                            <div class="raiting">
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star-half"></span>
+                                                <span class="raiting__numb">4.05</span>
+                                            </div>
+                                            <div class="content-card__watching">
+                                                <button class="btn-link btn-link_content-card">
+                                                    <span class="icon icon_heart"></span>
+                                                    <span class="btn-link__text">Watch</span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="content-card">
-                                    <a href="#" class="content-card__img-link">
-                                        <img src="img/content/nails.png" alt="" class="content-card__img">
-                                    </a>
-                                    <a href="#" class="content-card__desc">
-                                        Vintage Typewriter to post awesome stories about UI design and webdev.
-                                    </a>
-                                    <div class="content-card__price">
-                                        $49.50
-                                    </div>
-                                    <div class="content-card__delivery">
-                                        Eligible for Shipping To Mars or somewhere else
-                                    </div>
-                                    <div class="content-card__footer">
-                                        <div class="raiting">
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star-half"></span>
-                                            <span class="raiting__numb">4.05</span>
+                                </li>
+                                <li class="content-grid__cell">
+                                    <div class="content-card">
+                                        <a href="#" class="content-card__img-link">
+                                            <img src="img/content/item.png" alt="" class="content-card__img">
+                                        </a>
+                                        <a href="#" class="content-card__desc">
+                                            Vintage Typewriter to post awesome stories about UI design and webdev.
+                                        </a>
+                                        <div class="content-card__price">
+                                            $49.50
                                         </div>
-                                        <div class="content-card__watching">
-                                            <button class="btn-link btn-link_content-card">
-                                                <span class="icon icon_heart"></span>
-                                                <span class="btn-link__text">Watch</span>
-                                            </button>
+                                        <div class="content-card__delivery">
+                                            Eligible for Shipping To Mars or somewhere else
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="content-card">
-                                    <a href="#" class="content-card__img-link">
-                                        <img src="img/content/kistochki.png" alt="" class="content-card__img">
-                                    </a>
-                                    <a href="#" class="content-card__desc">
-                                        Vintage Typewriter to post awesome stories about UI design and webdev.
-                                    </a>
-                                    <div class="content-card__price">
-                                        $49.50
-                                    </div>
-                                    <div class="content-card__delivery">
-                                        Eligible for Shipping To Mars or somewhere else
-                                    </div>
-                                    <div class="content-card__footer">
-                                        <div class="raiting">
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star"></span>
-                                            <span class="raiting__item icon icon_star-half"></span>
-                                            <span class="raiting__numb">4.05</span>
-                                        </div>
-                                        <div class="content-card__watching">
-                                            <button class="btn-link btn-link_content-card">
-                                                <span class="icon icon_heart"></span>
-                                                <span class="btn-link__text">Watch</span>
-                                            </button>
+                                        <div class="content-card__footer">
+                                            <div class="raiting">
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star-half"></span>
+                                                <span class="raiting__numb">4.05</span>
+                                            </div>
+                                            <div class="content-card__watching">
+                                                <button class="btn-link btn-link_content-card">
+                                                    <span class="icon icon_heart"></span>
+                                                    <span class="btn-link__text">Watch</span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                </li>
+                                <li class="content-grid__cell">
+                                    <div class="content-card">
+                                        <a href="#" class="content-card__img-link">
+                                            <img src="img/content/shorts.png" alt="" class="content-card__img">
+                                        </a>
+                                        <a href="#" class="content-card__desc">
+                                            Vintage Typewriter to post awesome stories about UI design and webdev.
+                                        </a>
+                                        <div class="content-card__price">
+                                            $49.50
+                                        </div>
+                                        <div class="content-card__delivery">
+                                            Eligible for Shipping To Mars or somewhere else
+                                        </div>
+                                        <div class="content-card__footer">
+                                            <div class="raiting">
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star-half"></span>
+                                                <span class="raiting__numb">4.05</span>
+                                            </div>
+                                            <div class="content-card__watching">
+                                                <button class="btn-link btn-link_content-card">
+                                                    <span class="icon icon_heart"></span>
+                                                    <span class="btn-link__text">Watch</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="content-grid__cell">
+                                    <div class="content-card">
+                                        <a href="#" class="content-card__img-link">
+                                            <img src="img/content/pencil.png" alt="" class="content-card__img">
+                                        </a>
+                                        <a href="#" class="content-card__desc">
+                                            Vintage Typewriter to post awesome stories about UI design and webdev.
+                                        </a>
+                                        <div class="content-card__price">
+                                            $49.50
+                                        </div>
+                                        <div class="content-card__delivery">
+                                            Eligible for Shipping To Mars or somewhere else
+                                        </div>
+                                        <div class="content-card__footer">
+                                            <div class="raiting">
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star-half"></span>
+                                                <span class="raiting__numb">4.05</span>
+                                            </div>
+                                            <div class="content-card__watching">
+                                                <button class="btn-link btn-link_content-card">
+                                                    <span class="icon icon_heart"></span>
+                                                    <span class="btn-link__text">Watch</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="content-grid__cell">
+                                    <div class="content-card">
+                                        <a href="#" class="content-card__img-link">
+                                            <img src="img/content/tea.png" alt="" class="content-card__img">
+                                        </a>
+                                        <a href="#" class="content-card__desc">
+                                            Vintage Typewriter to post awesome stories about UI design and webdev.
+                                        </a>
+                                        <div class="content-card__price">
+                                            $49.50
+                                        </div>
+                                        <div class="content-card__delivery">
+                                            Eligible for Shipping To Mars or somewhere else
+                                        </div>
+                                        <div class="content-card__footer">
+                                            <div class="raiting">
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star-half"></span>
+                                                <span class="raiting__numb">4.05</span>
+                                            </div>
+                                            <div class="content-card__watching">
+                                                <button class="btn-link btn-link_content-card">
+                                                    <span class="icon icon_heart"></span>
+                                                    <span class="btn-link__text">Watch</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="content-grid__cell">
+                                    <div class="content-card">
+                                        <a href="#" class="content-card__img-link">
+                                            <img src="img/content/tree.png" alt="" class="content-card__img">
+                                        </a>
+                                        <a href="#" class="content-card__desc">
+                                            Vintage Typewriter to post awesome stories about UI design and webdev.
+                                        </a>
+                                        <div class="content-card__price">
+                                            $49.50
+                                        </div>
+                                        <div class="content-card__delivery">
+                                            Eligible for Shipping To Mars or somewhere else
+                                        </div>
+                                        <div class="content-card__footer">
+                                            <div class="raiting">
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star-half"></span>
+                                                <span class="raiting__numb">4.05</span>
+                                            </div>
+                                            <div class="content-card__watching">
+                                                <button class="btn-link btn-link_content-card">
+                                                    <span class="icon icon_heart"></span>
+                                                    <span class="btn-link__text">Watch</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="content-grid__cell">
+                                    <div class="content-card">
+                                        <a href="#" class="content-card__img-link">
+                                            <img src="img/content/nails.png" alt="" class="content-card__img">
+                                        </a>
+                                        <a href="#" class="content-card__desc">
+                                            Vintage Typewriter to post awesome stories about UI design and webdev.
+                                        </a>
+                                        <div class="content-card__price">
+                                            $49.50
+                                        </div>
+                                        <div class="content-card__delivery">
+                                            Eligible for Shipping To Mars or somewhere else
+                                        </div>
+                                        <div class="content-card__footer">
+                                            <div class="raiting">
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star-half"></span>
+                                                <span class="raiting__numb">4.05</span>
+                                            </div>
+                                            <div class="content-card__watching">
+                                                <button class="btn-link btn-link_content-card">
+                                                    <span class="icon icon_heart"></span>
+                                                    <span class="btn-link__text">Watch</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="content-grid__cell">
+                                    <div class="content-card">
+                                        <a href="#" class="content-card__img-link">
+                                            <img src="img/content/kistochki.png" alt="" class="content-card__img">
+                                        </a>
+                                        <a href="#" class="content-card__desc">
+                                            Vintage Typewriter to post awesome stories about UI design and webdev.
+                                        </a>
+                                        <div class="content-card__price">
+                                            $49.50
+                                        </div>
+                                        <div class="content-card__delivery">
+                                            Eligible for Shipping To Mars or somewhere else
+                                        </div>
+                                        <div class="content-card__footer">
+                                            <div class="raiting">
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star"></span>
+                                                <span class="raiting__item icon icon_star-half"></span>
+                                                <span class="raiting__numb">4.05</span>
+                                            </div>
+                                            <div class="content-card__watching">
+                                                <button class="btn-link btn-link_content-card">
+                                                    <span class="icon icon_heart"></span>
+                                                    <span class="btn-link__text">Watch</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="content__item">
-                        <div class="content__features">
-                            <ul class="content-features__list">
-                                <li class="content-features__item">
+                    <div class="content__features">
+                        <ul class="content-features__list">
+                            <li class="content-features__item">
                                     <a href="#" class="content-features__item-link">
                                         <div class="content-features__icon">
                                             <span class="icon icon_lightbulb"></span>
@@ -695,35 +716,34 @@
                                             Let’s boost yout marketplace
                                         </div>
                                     </a>
-                                </li>
-                                <li class="content-features__item">
-                                    <a href="#" class="content-features__item-link">
-                                        <div class="content-features__icon">
-                                            <span class="icon icon_auto-fix"></span>
-                                        </div>
-                                        <div class="content-features__title">
-                                            Clear & Usable user flows
-                                        </div>
-                                        <div class="content-features__subtitle">
-                                            Let’s boost yout marketplace
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="content-features__item">
-                                    <a href="#" class="content-features__item-link">
-                                        <div class="content-features__icon">
-                                            <span class="icon icon_palette"></span>
-                                        </div>
-                                        <div class="content-features__title">
-                                            Clear & Usable user flows
-                                        </div>
-                                        <div class="content-features__subtitle">
-                                            Let’s boost yout marketplace
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                            </li>
+                            <li class="content-features__item">
+                                <a href="#" class="content-features__item-link">
+                                    <div class="content-features__icon">
+                                        <span class="icon icon_auto-fix"></span>
+                                    </div>
+                                    <div class="content-features__title">
+                                        Clear & Usable user flows
+                                    </div>
+                                    <div class="content-features__subtitle">
+                                        Let’s boost yout marketplace
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="content-features__item">
+                                <a href="#" class="content-features__item-link">
+                                    <div class="content-features__icon">
+                                        <span class="icon icon_palette"></span>
+                                    </div>
+                                    <div class="content-features__title">
+                                        Clear & Usable user flows
+                                    </div>
+                                    <div class="content-features__subtitle">
+                                        Let’s boost yout marketplace
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
