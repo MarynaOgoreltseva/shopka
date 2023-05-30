@@ -129,6 +129,10 @@ ul {
         content: "\e911";
         color: #76a9ff;
     }
+    &_chevron-active:before {
+        content: "\e912";
+        color: #2264d1;
+    }
     &_chevron-down:before {
         content: "\e912";
         color: #2264d1;
@@ -157,6 +161,7 @@ ul {
         color: #ef6292;
     }
 }
+
 
 .wrap {
     max-width: 1493px;
@@ -312,7 +317,7 @@ ul {
         top: -3px;
         right: -3px;
     }
-    &_aside-filter-link {
+    &_aside-btn-link {
         font-size: 24px;
         line-height: 36px;
         padding: 8px 20px 8px 12px;
@@ -408,6 +413,49 @@ ul {
 }
 
 
+.aside-checking {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #19191D;
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #FFFFFF;
+        padding: 10px 8px;
+        box-shadow: 0px 1px 2px rgba(58, 58, 68, 0.24), 0px 2px 4px rgba(90, 91, 106, 0.24);
+        border-radius: 4px;
+        font-family: 'Roboto';
+        line-height: 24px;
+        &_open {
+            font-weight: 500;
+            letter-spacing: 0.022em;
+            box-shadow: none;
+            background: #F7F7FA;
+        }
+
+    }
+    &__input {
+        letter-spacing: 0.0275em;
+        margin-right: 16px;
+    }
+    &__list {
+        padding: 8px;
+    }
+    &__item {
+        padding: 8px;
+    }
+    &_open {
+        background: #F7F7FA;
+        border-radius: 4px;
+    }
+    & + .aside-checking {
+        margin-top: 24px;
+    }
+}
 
 
 
