@@ -525,6 +525,8 @@ ul {
         align-items: center;
         gap: 8px;
         margin-bottom: 16px;
+}
+.content-tab {
     &__text {
         font-family: 'Inter';
         font-style: normal;
@@ -534,7 +536,7 @@ ul {
         letter-spacing: 0.018em;
         color: #19191D;
     }
-    & .tabs {
+    &__btn {
         padding: 6px 12px;
         font-family: 'Inter';
         font-style: normal;

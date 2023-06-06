@@ -506,7 +506,8 @@ ul {
   gap: 8px;
   margin-bottom: 16px;
 }
-.content-tabs__text {
+
+.content-tab__text {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -515,7 +516,7 @@ ul {
   letter-spacing: 0.018em;
   color: #19191D;
 }
-.content-tabs .tabs {
+.content-tab__btn {
   padding: 6px 12px;
   font-family: "Inter";
   font-style: normal;
@@ -527,7 +528,7 @@ ul {
   background: #EDEDF0;
   border-radius: 99px;
 }
-.content-tabs .tabs:hover, .content-tabs .tabs:focus, .content-tabs .tabs:active {
+.content-tab__btn:hover, .content-tab__btn:focus, .content-tab__btn:active {
   text-decoration: underline;
   cursor: pointer;
 }
