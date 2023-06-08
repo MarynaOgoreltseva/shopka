@@ -6,6 +6,10 @@ $(document).ready(function () {
 
 	$('.aside-checking__list').hide();
 	$('.aside-checking__title').on('click', accordion);
+	$( ".aside-checking__title, .aside-checking" ).on( "click", function() {
+		$( this ).toggleClass( "open" );
+	});
+
 
 
 	$('.btn-link_aside-btn-link').on('click', accordion);
