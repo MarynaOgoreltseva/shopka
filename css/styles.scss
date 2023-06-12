@@ -160,6 +160,12 @@ ul {
         content: "\e917";
         color: #ef6292;
     }
+    &_basket:before {
+        content: "\e918";
+    }
+    &_user:before {
+        content: "\e971";
+    }
 }
 
 
@@ -274,11 +280,13 @@ ul {
 .header-registration {
     display: flex;
     gap: 18px;
-
     &__pic {
         width: 40px;
         height: 40px;
     }
+}
+.reg-mobile {
+    display: none;
 }
 .btn-link {
     cursor: pointer;
@@ -321,7 +329,6 @@ ul {
         font-size: 24px;
         line-height: 36px;
         padding: 8px 20px 8px 12px;
-        max-width: 304px;
         width: 100%;
         display: inline-flex;
         gap: 8px;
@@ -391,7 +398,7 @@ ul {
 
 .aside-menu {
     padding: 24px 51px 0 0;
-    max-width: 355px;
+    max-width: 304px;
     width: 100%;
 }
 
@@ -709,5 +716,75 @@ ul {
         line-height: 143%;
         letter-spacing: 0.018em;
         color: #5A5B6A;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        margin-bottom: 0;
+        &__category {
+            display: none;
+        }
+    }
+        
+    .header-links {
+        display: none;
+    }
+
+    .header-search {
+        max-width: calc(100% - 507px);
+        width: 100%;
+    }
+
+    .categories {
+        display: none;
+    }
+    .content-tabs {
+        display: none;
+    }
+    .content {
+        & .content-filter {
+                display: none;
+            }
+    }
+    
+    .content-grid {
+        justify-content: center;
+    }
+    .btn_content-view {
+        padding: 8px 10px;
+    }
+    .content__footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header .wrap {
+        justify-content: space-between;
+    }
+    // .logo__name {
+    //     display: none;
+    // }
+    .header-registration {
+        display: none;
+    }
+    .reg-mobile {
+        display: flex;
+        gap: 20px;
+        & a {
+            display: block;
+        }
+        & .icon {
+            color: #2264D1;
+            font-size: 30px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .logo__name {
+        display: none;
     }
 }
