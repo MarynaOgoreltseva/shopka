@@ -160,6 +160,12 @@ ul {
 .icon_user:before {
   content: "\e971";
 }
+.icon_th-menu-outline:before {
+  content: "\e91a";
+}
+.icon_filter:before {
+  content: "\e919";
+}
 
 .wrap {
   max-width: 1533px;
@@ -244,6 +250,10 @@ ul {
 }
 .header__category:hover {
   text-decoration: underline;
+}
+
+.mob-menu {
+  display: none;
 }
 
 .header-search {
@@ -750,8 +760,28 @@ ul {
   }
 }
 @media screen and (max-width: 480px) {
+  .header {
+    padding-left: 0;
+  }
+  .header .wrap {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  .mob-menu {
+    display: block;
+  }
+  .reg-mobile {
+    gap: 10px;
+  }
+  .header-search {
+    max-width: unset;
+    margin-right: 0;
+  }
   .logo__name {
     display: none;
+  }
+  .logo {
+    margin-right: 0;
   }
   .aside-menu {
     display: none;
