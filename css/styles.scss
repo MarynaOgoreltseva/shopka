@@ -42,6 +42,13 @@ ul {
     list-style: none;
 }
 
+.btn-link_aside-btn-link.btn-link_cheking {
+    display: none;
+}
+
+.aside-nav.aside-nav_cheking {
+    display: block;
+}
 .icon {
     font-family: 'icomoon' !important;
     speak: never;
@@ -840,52 +847,33 @@ ul {
         gap: 10px;
     }
     .content {
-        &__settings {
-            display: none;
-        }
+        
         &__block {
             padding: 0;
         }
 
+    }
+    .content .content-select {
+        flex-wrap: nowrap;
+        gap: unset;
+        &__item {
+            width: calc(100% / 3);
+        }
+        &__opt {
+            width: 100%;
+        }
+    }
+    .content .content-filter {
+        display: flex;
+    }
+    .content__settings {
+        gap: 20px;
     }
     .content-mob {
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    // .mobile-select {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     gap: 16px;
-    //     &__opt {
-    //         padding: 6px 12px;
-    //         border: 1px solid #B4B4BB;
-    //         border-radius: 4px;
-    //     }
-    //     &__btn {
-    //         font-family: "Inter";
-    //         font-style: normal;
-    //         font-weight: 500;
-    //         font-size: 14px;
-    //         line-height: 143%;
-    //         letter-spacing: 0.018em;
-    //         color: #2264D1;
-    //         padding: 4px 12px;
-    //         border: 1px solid #9DC2FF;
-    //         text-decoration: none;
-    //     }
-    //     & li {
-    //         display: none;
-    //     }
-    // }
-    // .mobile-filter {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     border-radius: 4px;
-    //     & li {
-    //         display: none;
-    //     }
-    // }
     .mobile-view {
         display: flex;
         flex-wrap: wrap;
@@ -912,12 +900,12 @@ ul {
         padding: 0;
         max-width: 100%;
     }
-    .aside-checking {
-        display: none;
-    }
     .container .wrap {
         display: flex;
         gap: 0;
         flex-direction: column;
     }
+        .btn-link_aside-btn-link.btn-link_cheking {
+            display: block;
+        }
 }
