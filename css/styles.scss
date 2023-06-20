@@ -42,138 +42,7 @@ ul {
     list-style: none;
 }
 
-.icon {
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    display: inline-block;
-    &_heart:before {
-        content: "\e901";
-        color: #2979ff;
-    }
-    &_babysitter:before {
-        content: "\e902";
-        color: #9696a0;
-    }
-    &_barley:before {
-        content: "\e903";
-        color: #9696a0;
-    }
-    &_cinema:before {
-        content: "\e904";
-        color: #9696a0;
-    }
-    &_concert:before {
-        content: "\e905";
-        color: #9696a0;
-    }
-    &_fitness:before {
-        content: "\e906";
-        color: #9696a0;
-    }
-    &_hanger:before {
-        content: "\e907";
-        color: #9696a0;
-    }
-    &_nuclear-station:before {
-        content: "\e908";
-        color: #9696a0;
-    }
-    &_observation:before {
-        content: "\e909";
-        color: #9696a0;
-    }
-    &_pets:before {
-        content: "\e90a";
-        color: #9696a0;
-    }
-    &_powerstation:before {
-        content: "\e90b";
-        color: #9696a0;
-    }
-    &_restaraunt:before {
-        content: "\e90c";
-        color: #9696a0;
-    }
-    &_ship-wheel:before {
-        content: "\e90d";
-        color: #9696a0;      
-    }
-    &_close:before {
-        content: "\e900";
-        color: #2979FF;
-    }
-    &_search:before {
-        content: "\e986";
-        color: #787885;
-    }
-    &_view-grid:before {
-        content: "\e90e";
-        color: #2979ff;
-    }
-    &_view-list:before {
-        content: "\e90f";
-        color: #787885;
-    }
-    &_filter-variant:before {
-        content: "\e910";
-        color: #2264d1;
-    }
-    &_chevron-right:before {
-        content: "\e911";
-        color: #76a9ff;
-    }
-    &_chevron-active:before {
-        content: "\e912";
-        color: #2264d1;
-    }
-    &_chevron-down:before {
-        content: "\e912";
-        color: #2264d1;
-    }
-    &_star-half:before {
-        content: "\e914";
-        color: #fb8200;
-    }
-    
-    &_star:before {
-        content: "\e913";
-        color: #fb8200;
-    }
-    &_lightbulb:before {
-        content: "\e915";
-        color: #65b168;
-    }
 
-    &_auto-fix:before {
-        content: "\e916";
-        color: #7985cb;
-    }
-
-    &_palette:before {
-        content: "\e917";
-        color: #ef6292;
-    }
-    &_basket:before {
-        content: "\e918";
-    }
-    &_user:before {
-        content: "\e971";
-    }
-    &_th-menu-outline:before {
-        content: "\e91a";
-    }
-
-    &_filter:before {
-        content: "\e919";
-    }
-}
 
 
 .wrap {
@@ -182,11 +51,13 @@ ul {
     margin: 0 auto;
     padding: 0 20px;
     &_header {
+        margin-top: 16px;
         max-width: 1920px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         // &.is-active {
         //     display: none;
         // }
@@ -199,7 +70,6 @@ ul {
     display: flex;
     flex-wrap: nowrap;
     gap: 12px;
-    margin-right: 36px;
     &__letter {
         font-weight: 700;
         font-size: 32px;
@@ -222,7 +92,6 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: 33px;
-    margin-right: 107px;
     &__link {
         font-weight: 400;
         font-size: 20px;
@@ -241,7 +110,6 @@ ul {
     position: relative;
     font-family: 'Inter';
     font-style: normal;
-    padding-top: 16px;
     margin-bottom: 48px;
     
     &__submit {
@@ -259,49 +127,47 @@ ul {
         line-height: 158%;
         letter-spacing: 0.0075em;
         color: #2264D1;
-        margin-right: 123px;
         text-decoration: none;
         &:hover {
             text-decoration: underline;
         }
     }
 }
-.mob-menu {
-    display: none;
-    &.is-active {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 100vh;
-        padding: 20px;
-        background: #EBF2FF;
-        margin-top: -20px;
-    }
-    &__link{
-        text-decoration: none;
-        display: block;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 46px;
-        line-height: 150%;
-        letter-spacing: 0.0275em;
-        color: #2979FF;
-    }
-    &__list {
-        margin-right: 50px;
-    }
-}
+// .mob-menu {
+//     display: none;
+//     &.is-active {
+//         display: flex;
+//         justify-content: space-between;
+//         width: 100%;
+//         height: 100vh;
+//         padding: 20px;
+//         background: #EBF2FF;
+//         margin-top: -20px;
+//     }
+//     &__link{
+//         text-decoration: none;
+//         display: block;
+//         font-family: 'Inter';
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 46px;
+//         line-height: 150%;
+//         letter-spacing: 0.0275em;
+//         color: #2979FF;
+//     }
+//     &__list {
+//         margin-right: 50px;
+//     }
+// }
 .header-search {
     display: flex;
     align-items: center;
     gap: 12px;
-    // max-width: 668px;
-    // width: 100%;
     background: #EDEDF0;
     border-radius: 99px;
-    margin-right: 30px;
     padding: 8px 17px 8px 15px;
+    flex-grow: 1;
+    margin: 0 20px;
 
     &__input {
         width: 100%;
@@ -468,7 +334,7 @@ ul {
         padding: 8px 0 8px 16px;
     }
     &__tel-link {
-        padding: 6px 0 8px 48px;
+        padding: 5px 0 5px 48px;
     }
 }
 
@@ -891,8 +757,10 @@ ul {
     .aside-menu {
         display: none; 
         &.is-active {
-            display: block;
-            padding: 0;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            padding: 20px;
             max-width: 100%;
             width: 100%;
             background: #EBF2FF;
@@ -906,6 +774,21 @@ ul {
         }
         
     }
+    .aside-checking {
+        margin-top: 10px;
+        &__item {
+            padding: 5px;
+        }
+    }
+    .aside-checking__list {
+        padding-top: 0;
+    }
+
+    .aside-nav__item-link,
+    .aside-nav__subitems-link {
+            padding: 5px 0 5px 16px;
+        }
+    
     .container .wrap {
         display: flex;
         gap: 0;
