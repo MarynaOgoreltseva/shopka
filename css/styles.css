@@ -38,14 +38,6 @@ ul {
   list-style: none;
 }
 
-.btn-link_aside-btn-link.btn-link_cheking {
-  display: none;
-}
-
-.aside-nav.aside-nav_cheking {
-  display: block;
-}
-
 .icon {
   font-family: "icomoon" !important;
   speak: never;
@@ -181,6 +173,16 @@ ul {
   margin: 0 auto;
   padding: 0 20px;
 }
+.wrap_header {
+  max-width: 1920px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.wrap_header.is-active {
+  display: none;
+}
 
 .logo {
   font-family: "Red Hat Display";
@@ -227,17 +229,11 @@ ul {
 }
 
 .header {
+  position: relative;
   font-family: "Inter";
   font-style: normal;
   padding-top: 16px;
-  padding-left: 16px;
   margin-bottom: 48px;
-}
-.header .wrap {
-  max-width: 1920px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
 .header__submit {
   align-self: center;
@@ -263,13 +259,34 @@ ul {
 .mob-menu {
   display: none;
 }
+.mob-menu.is-active {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background: #EBF2FF;
+  margin-top: -20px;
+}
+.mob-menu__link {
+  text-decoration: none;
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 150%;
+  letter-spacing: 0.0275em;
+  color: #2979FF;
+}
+.mob-menu__list {
+  margin-right: 50px;
+}
 
 .header-search {
   display: flex;
   align-items: center;
   gap: 12px;
-  max-width: 668px;
-  width: 100%;
   background: #EDEDF0;
   border-radius: 99px;
   margin-right: 30px;
@@ -344,6 +361,7 @@ ul {
   display: inline-flex;
   gap: 8px;
   align-items: center;
+  background: #EBF2FF;
 }
 .btn-link__text {
   margin: 0 auto;
@@ -360,7 +378,9 @@ ul {
   border: 1px solid #9DC2FF;
 }
 .btn-link_mob {
+  display: none;
   padding: 5px 12px;
+  background: #EBF2FF;
 }
 
 .categories__list {
@@ -404,14 +424,9 @@ ul {
 }
 
 .aside-menu {
-  padding: 24px 51px 0 0;
-  max-width: 304px;
-  width: 100%;
+  padding-top: 24px;
 }
 
-.aside-nav {
-  margin: 40px 0 32px;
-}
 .aside-nav a {
   text-decoration: none;
   display: block;
@@ -487,8 +502,6 @@ ul {
 }
 
 .section {
-  max-width: 1114px;
-  width: 100%;
   padding-top: 24px;
 }
 
@@ -570,6 +583,7 @@ ul {
 .content-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   gap: 15px;
   background: #FFFFFF;
 }
@@ -738,8 +752,8 @@ ul {
   .content .content-filter {
     display: none;
   }
-  .content-grid {
-    justify-content: center;
+  .content-card {
+    max-width: 220px;
   }
   .btn_content-view {
     padding: 8px 10px;
@@ -748,8 +762,8 @@ ul {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
-  .header .wrap {
+@media screen and (max-width: 780px) {
+  .wrap_header {
     justify-content: space-between;
   }
   .header-registration {
@@ -767,16 +781,15 @@ ul {
     font-size: 30px;
   }
 }
-@media screen and (max-width: 480px) {
-  .header {
-    padding-left: 0;
-  }
-  .header .wrap {
+@media screen and (max-width: 768px) {
+  .wrap_header {
     flex-wrap: nowrap;
     gap: 10px;
   }
-  .mob-menu {
+  .btn-link_mob {
     display: block;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .reg-mobile {
     gap: 10px;
@@ -785,11 +798,11 @@ ul {
     max-width: unset;
     margin-right: 0;
   }
-  .logo__name {
-    display: none;
-  }
   .logo {
     margin-right: 0;
+  }
+  .logo__name {
+    display: none;
   }
   .aside-menu {
     display: none;
@@ -809,6 +822,9 @@ ul {
   .content__block {
     padding: 0;
   }
+  .content__settings {
+    gap: 20px;
+  }
   .content .content-select {
     flex-wrap: nowrap;
     gap: unset;
@@ -822,32 +838,8 @@ ul {
   .content .content-filter {
     display: flex;
   }
-  .content__settings {
-    gap: 20px;
-  }
-  .content-mob {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .mobile-view {
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 4px;
-  }
-  .btn_mobile-view {
-    padding: 6px 10px;
-  }
-  .btn_mobile-view:hover, .btn_mobile-view:focus, .btn_mobile-view:active {
-    color: #2264D1;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 2px rgba(27, 78, 163, 0.24), 0px 2px 4px rgba(41, 121, 255, 0.24);
-    border-radius: 4px;
-    cursor: pointer;
-  }
   .aside-btn-link {
     display: block;
-    background: #EBF2FF;
   }
   .aside-menu {
     display: block;

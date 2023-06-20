@@ -10,8 +10,10 @@ $(document).ready(function () {
 		$( this ).toggleClass( "open" );
 	});
 
-
-
+$('.btn-link_mob').click(function() {
+        $('.mob-menu,.wrap_header').toggleClass('is-active');
+    });
+	
 	$('.btn-link_aside-btn-link').on('click', accordion);
 	$('.aside-nav .aside-nav__item-link').on('click', accordion);
 	$('.aside-nav .aside-nav__subitems-link').on('click', accordion);
