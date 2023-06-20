@@ -187,9 +187,9 @@ ul {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        &.is-active {
-            display: none;
-        }
+        // &.is-active {
+        //     display: none;
+        // }
     }
 }
 
@@ -849,9 +849,6 @@ ul {
             display: none;
         }
     }
-    .aside-menu {
-        display: none;
-    }
     .content-grid__cell {
         max-width: calc(50% - 15px);
     }
@@ -892,9 +889,22 @@ ul {
         // background: #EBF2FF;
     }
     .aside-menu {
-        display: block;
-        padding: 0;
-        max-width: 100%;
+        display: none; 
+        &.is-active {
+            display: block;
+            padding: 0;
+            max-width: 100%;
+            width: 100%;
+            background: #EBF2FF;
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow-y: auto;
+        }
+        
     }
     .container .wrap {
         display: flex;
