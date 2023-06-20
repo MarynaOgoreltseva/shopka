@@ -308,6 +308,19 @@ ul {
     padding-top: 24px;
 }
 
+.logo-mob {
+    display: none;
+    &.is-active {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        & .logo__name {
+                display: block;
+            }
+    }
+
+}
+
 .aside-nav {
     // margin: 40px 0 32px;
     & a {
@@ -699,7 +712,7 @@ ul {
     }
     .btn-link_mob {
         display: block;
-        height: fit-content;
+        width: fit-content;
     }
     .reg-mobile {
         gap: 10px;
@@ -758,8 +771,7 @@ ul {
         display: none; 
         &.is-active {
             display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
+            flex-direction: column;
             padding: 20px;
             max-width: 100%;
             width: 100%;

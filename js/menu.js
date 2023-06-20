@@ -11,7 +11,7 @@ $(document).ready(function () {
 	});
 
 $('.btn-link_mob').click(function() {
-        $('.aside-menu').toggleClass('is-active');
+        $('.aside-menu,.logo-mob').toggleClass('is-active');
     });
 	
 	$('.btn-link_aside-btn-link').on('click', accordion);
