@@ -57,7 +57,7 @@ ul {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
+        gap: 20px;
         // &.is-active {
         //     display: none;
         // }
@@ -91,7 +91,7 @@ ul {
 .header-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 33px;
+    gap: 20px;
     &__link {
         font-weight: 400;
         font-size: 20px;
@@ -167,7 +167,6 @@ ul {
     border-radius: 99px;
     padding: 8px 17px 8px 15px;
     flex-grow: 1;
-    margin: 0 20px;
 
     &__input {
         width: 100%;
@@ -182,7 +181,7 @@ ul {
 
 .header-registration {
     display: flex;
-    gap: 18px;
+    gap: 20px;
     &__pic {
         width: 40px;
         height: 40px;
@@ -436,12 +435,14 @@ ul {
     .content-filter {
         display: flex;
         flex-wrap: wrap;
+        gap: 2px;
         border-radius: 4px;
     }
     .content-view {
         display: flex;
         flex-wrap: wrap;
         border-radius: 4px;
+        gap: 2px;
     }
     
 }
@@ -489,10 +490,17 @@ ul {
 
 .content-grid {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 15px;
     background: #FFFFFF;
+    &.is-product-list {
+        flex-direction: column;
+        & img {
+            width: unset;
+        }
+    }
 }
 .content-card {
     max-width: 259px;
@@ -502,7 +510,12 @@ ul {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-
+    &.is-product-list {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        max-width: unset;
+    }
     &__img-link {
         margin-bottom: 12px;
         display: inline-block;
@@ -743,15 +756,15 @@ ul {
         }
     }
     .content {
-        &__block {
-            padding: 0;
-        }
+        // &__block {
+        //     padding: 0;
+        // }
         &__settings {
             gap: 20px;
         }
         & .content-select {
             flex-wrap: nowrap;
-            gap: unset;
+            gap: 5px;
         
             &__item {
                 width: calc(100% / 3);
@@ -759,6 +772,7 @@ ul {
         
             &__opt {
                 width: 100%;
+                padding: 5px;
             }
         }
         & .content-filter {

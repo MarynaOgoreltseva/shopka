@@ -10,8 +10,12 @@ $(document).ready(function () {
 		$( this ).toggleClass( "open" );
 	});
 
-$('.btn-link_mob').click(function() {
-        $('.aside-menu,.logo-mob').toggleClass('is-active');
+	$('.btn-link_mob').click(function() {
+	        $('.aside-menu,.logo-mob').toggleClass('is-active');
+	});
+	
+	$('.btn_content-view').click(function() {
+        $('.content-grid,.content-card').toggleClass('is-product-list');
     });
 	
 	$('.btn-link_aside-btn-link').on('click', accordion);
