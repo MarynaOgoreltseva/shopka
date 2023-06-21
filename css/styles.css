@@ -583,7 +583,7 @@ ul {
 
 @media screen and (max-width: 1024px) {
   .header {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
   .header__category {
     display: none;
@@ -594,9 +594,6 @@ ul {
   .header-search {
     max-width: calc(100% - 507px);
     width: 100%;
-  }
-  .categories {
-    display: none;
   }
   .content-tabs {
     display: none;

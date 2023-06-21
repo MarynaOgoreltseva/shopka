@@ -646,7 +646,7 @@ ul {
 
 @media screen and (max-width: 1024px) {
     .header {
-        margin-bottom: 0;
+        margin-bottom: 20px;
         &__category {
             display: none;
         }
@@ -662,7 +662,9 @@ ul {
     }
 
     .categories {
-        display: none;
+        
+
+        // display: none;
     }
     .content-tabs {
         display: none;

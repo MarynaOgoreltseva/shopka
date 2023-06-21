@@ -19,6 +19,17 @@ $('.btn-link_mob').click(function() {
 	$('.aside-nav .aside-nav__subitems-link').on('click', accordion);
 
 	function accordion(){
-    $(this).next().slideToggle(1000);
-}
+		$(this).next().slideToggle(1000);
+		
+	}
+	
+	$('.responsive').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true
+});
+
 })
