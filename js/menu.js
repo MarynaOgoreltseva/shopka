@@ -14,8 +14,11 @@ $(document).ready(function () {
 	        $('.aside-menu,.logo-mob').toggleClass('is-active');
 	});
 	
-	$('.btn_content-view').click(function() {
-        $('.content-grid,.content-card').toggleClass('is-product-list');
+	$('.btn_list').click(function() {
+        $('.content-grid,.content-card').addClass('is-product-list');
+	});
+	$('.btn_flex').click(function() {
+        $('.content-grid,.content-card').removeClass('is-product-list');
     });
 	
 	$('.btn-link_aside-btn-link').on('click', accordion);
