@@ -452,7 +452,7 @@ ul {
   flex-direction: column;
 }
 .content-grid.is-product-list img {
-  width: unset;
+  width: 100%;
 }
 
 .content-card {
