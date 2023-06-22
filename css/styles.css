@@ -667,9 +667,6 @@ ul {
   .logo__name {
     display: none;
   }
-  .content-grid__cell {
-    max-width: calc(50% - 15px);
-  }
   .content-card {
     padding-left: 0;
     padding-right: 0;
@@ -737,5 +734,11 @@ ul {
   }
   .btn-link_aside-btn-link.btn-link_cheking {
     display: block;
+  }
+}
+@media screen and (max-width: 320px) {
+  .content-card.is-product-list {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=styles.css.map */

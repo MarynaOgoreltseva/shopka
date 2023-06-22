@@ -30,13 +30,12 @@ $(document).ready(function () {
 		
 	}
 	
-	$('.responsive').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  centerMode: true,
-  variableWidth: true
-});
+	$('.categories__list').slick({
+		dots: true,
+		initialSlide: 1,
+  		speed: 300,
+		variableWidth: true,
+		
+	});
 
 })
