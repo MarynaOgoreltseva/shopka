@@ -379,9 +379,10 @@ ul {
 
 
 .section {
-    // max-width: 1114px;
-    // width: 100%;
     padding-top: 24px;
+    &.is-product-list {
+        width: 1258px;
+    }
 }
 
 .content {

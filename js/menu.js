@@ -15,10 +15,10 @@ $(document).ready(function () {
 	});
 	
 	$('.btn_list').click(function() {
-        $('.content-grid,.content-card').addClass('is-product-list');
+        $('.section,.content-grid,.content-card').addClass('is-product-list');
 	});
 	$('.btn_flex').click(function() {
-        $('.content-grid,.content-card').removeClass('is-product-list');
+        $('.section,.content-grid,.content-card').removeClass('is-product-list');
     });
 	
 	$('.btn-link_aside-btn-link').on('click', accordion);
