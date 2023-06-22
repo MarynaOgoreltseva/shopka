@@ -379,6 +379,8 @@ ul {
 
 
 .section {
+    // max-width: 1114px;
+    // width: 100%;
     padding-top: 24px;
     &.is-product-list {
         width: 1258px;
@@ -665,9 +667,9 @@ ul {
     .content-tabs {
         display: none;
     }
-        .content-card {
-            max-width: 217px;
-        }
+    .content-card {
+        max-width: 213px;
+    }
     .btn_content-view {
         padding: 8px 10px;
     }
@@ -688,6 +690,9 @@ ul {
 // }
 
 @media screen and (max-width: 768px) {
+    .section.is-product-list {
+            width: unset;
+        }
     .header-registration {
             display: none;
         }

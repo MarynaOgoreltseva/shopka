@@ -622,7 +622,7 @@ ul {
     display: none;
   }
   .content-card {
-    max-width: 217px;
+    max-width: 213px;
   }
   .btn_content-view {
     padding: 8px 10px;
@@ -635,6 +635,9 @@ ul {
   }
 }
 @media screen and (max-width: 768px) {
+  .section.is-product-list {
+    width: unset;
+  }
   .header-registration {
     display: none;
   }
